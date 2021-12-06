@@ -1,0 +1,8 @@
+
+
+//Global variables
+
+
+void textsetup() 
+{
+}
