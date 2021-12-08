@@ -10,6 +10,9 @@ float ButtonX6, ButtonY6, ButtonWidth6, ButtonHeight6;
 float ButtonX7, ButtonY7, ButtonWidth7, ButtonHeight7;
 float ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8;
 
+float QuitButtonX, QuitButtonY, QuitButtonWidth, QuitButtonHeight;
+
+
 Boolean draw=false;
 
 
@@ -57,6 +60,7 @@ void draw()
  rect(ButtonX7, ButtonY7, ButtonWidth7, ButtonHeight7);
  rect(ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8);
   
+rect(QuitButtonX, QuitButtonY, QuitButtonWidth, QuitButtonHeight);
  
 }//  end void draw()
 
