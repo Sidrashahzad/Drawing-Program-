@@ -10,7 +10,7 @@ void Population()
  rectX1 = displayWidth*0;
  rectY1 =  displayHeight*0;
  rectWidth1= displayWidth*1/4;
- rectHeight1=  displayHeight*1/6;
+ rectHeight1=  displayHeight*1/8;
  
  ButtonX1 = displayWidth*0;
  ButtonY1=  displayHeight*0;
@@ -49,11 +49,14 @@ void Population()
  ButtonHeight7 = displayHeight * 1/16;
  
  ButtonX8 = displayWidth* 3/16;
- ButtonY8 = displayWidth * 1/16;
+ ButtonY8 = displayHeight* 1/16;
  ButtonWidth8= displayWidth * 1/16;
  ButtonHeight8 = displayHeight * 1/16;
  
- 
+ ButtonX9= displayWidth*0;
+ ButtonY9 =  displayHeight*1/8;
+ ButtonWidth9=displayWidth*1/4; 
+ ButtonHeight9=  displayHeight*1/8;
  
 
 

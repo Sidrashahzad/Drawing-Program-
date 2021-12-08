@@ -9,9 +9,9 @@ float ButtonX5, ButtonY5, ButtonWidth5, ButtonHeight5;
 float ButtonX6, ButtonY6, ButtonWidth6, ButtonHeight6;
 float ButtonX7, ButtonY7, ButtonWidth7, ButtonHeight7;
 float ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8;
+float ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9;
 
-float QuitButtonX, QuitButtonY, QuitButtonWidth, QuitButtonHeight;
-
+color white= #FFFFFF ;
 
 Boolean draw=false;
 
@@ -29,10 +29,10 @@ Boolean draw=false;
 void setup() {
 
   fullScreen();
+ 
   Population();
-
-
-  textsetup() ;
+  QuitButtonSetup();
+  QuitButtonDraw();
 
 
   rect(DrawingSurfaceX1, DrawingSurfaceY1, DrawingSurfaceWidth1, DrawingSurfaceHeight1);
@@ -60,8 +60,9 @@ void draw()
  rect(ButtonX7, ButtonY7, ButtonWidth7, ButtonHeight7);
  rect(ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8);
   
-rect(QuitButtonX, QuitButtonY, QuitButtonWidth, QuitButtonHeight);
- 
+ rect(ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9); 
+  
+
 }//  end void draw()
 
 
@@ -76,6 +77,11 @@ void mousePressed()
    } else{
    draw=false; }
  }
+  
+ 
+ if(mouseX>=QuitButtonX && mouseX <= QuitButtonX+QuitButtonWidth && mouseY>= QuitButtonY &&  mouseY<= QuitButtonY+QuitButtonHeight) exit();
+ 
+  
   
    
 } // end void mousePressed()
