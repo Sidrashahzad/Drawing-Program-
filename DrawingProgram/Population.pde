@@ -35,13 +35,23 @@ void Population()
  
  ButtonX5 = displayWidth*0;
  ButtonY5 =  displayHeight*1/16;
- ButtonWidth5= displayWidth*  1/16;
+ ButtonWidth5= displayWidth *  1/16;
  ButtonHeight5  =  displayHeight*1/16;
- /*
- ButtonX6, ButtonY6, ButtonWidth6, ButtonHeight6;
- ButtonX7, ButtonY7, ButtonWidth7, ButtonHeight7;
- ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8;*/
  
+ ButtonX6 = displayWidth*1/16;
+ ButtonY6  =  displayHeight*1/16;
+ ButtonWidth6 = displayWidth * 1/16;
+ ButtonHeight6 = displayHeight * 1/16;
+ 
+ ButtonX7 = displayWidth* 2/16; 
+ ButtonY7  =  displayHeight*1/16;
+ ButtonWidth7 = displayWidth * 1/16;
+ ButtonHeight7 = displayHeight * 1/16;
+ 
+ ButtonX8 = displayWidth* 3/16;
+ ButtonY8 = displayWidth * 1/16;
+ ButtonWidth8= displayWidth * 1/16;
+ ButtonHeight8 = displayHeight * 1/16;
  
  
  
