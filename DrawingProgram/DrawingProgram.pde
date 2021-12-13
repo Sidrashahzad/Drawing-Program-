@@ -31,26 +31,20 @@ Boolean draw=false;
 
 
 
-
-
-
-
-
-
 void setup() {
 
   fullScreen();
  
-  Population();
-  QuitButtonSetup();
-  QuitButtonDraw();
+  Population(); 
+  QuitButtonSetup ();
+  QuitButtonDraw ();
+
   shapeButtonSetup();
   shapeButtonDraw();
-   ImageButtonSetup();
-   ;
-//textsetup();
-faceX1, DrawingSurfaceY1, DrawingSurfaceWidth1, DrawingSurfaceHeight1);
-}// end voidsetup()
+  ImageButtonSetup();
+  ImageButtondraw();
+rect (DrawingSurfaceX1, DrawingSurfaceY1, DrawingSurfaceWidth1, DrawingSurfaceHeight1);
+}
 
 
 
@@ -94,8 +88,8 @@ void draw()
  rect(ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9); 
   rect(rectX2, rectY2 ,rectWidth2, rectHeight2);
   rect(rectX3, rectY3,rectWidth3,rectHeight3);
- 
-  rect(rectXPic, rectraw()
+// ellipse
+}
 
 
 
@@ -111,17 +105,23 @@ void mousePressed()
  }
  
  
- if(mouseX>ButtonX1  && mouseX<ButtonX1+ButtonWidth1 && mouseY>ButtonY1 &&  mouseY>ButtonY1+ ButtonHeight1)
+ if(mouseX>ButtonX1  && mouseX<ButtonX1+ButtonWidth1 && mouseY>ButtonY1 &&  mouseY>ButtonY1+ButtonHeight1);
+ 
+  if(mouseX>=QuitButtonX && mouseX <= QuitButtonX+QuitButtonWidth && mouseY>= QuitButtonY &&  mouseY<= QuitButtonY+QuitButtonHeight) exit();
+ 
+ 
+ 
+}
 
  
 
  
- if(mouseX>=QuitButtonX && mouseX <= QuitBut { stroke (red);}ton { X+QuitButtonWidth && mouseY>= QuitButtonY &&  mouseY<= QuitButtonY+QuitButtonHeight) exit();
+
  
   
   
    
-} // end void mousePressed()
 
-void ke}yPressed() {
+
+void keyPressed() {
 } // end void keyPressed() 

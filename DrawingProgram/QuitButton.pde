@@ -49,5 +49,4 @@ void QuitButtonDraw()
 void QuitButtonMousePressed()
 {
  
- 
  }
