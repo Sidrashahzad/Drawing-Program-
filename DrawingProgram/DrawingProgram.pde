@@ -11,7 +11,7 @@ float ButtonX6, ButtonY6, ButtonWidth6, ButtonHeight6;
 float ButtonX7, ButtonY7, ButtonWidth7, ButtonHeight7;
 float ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8;
 float ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9;
-float ButtonX10,ButtonY10, ButtonWidth10, ButtonHeight10;
+
 float rectX2, rectY2 ,rectWidth2, rectHeight2;
 float rectX3, rectY3,rectWidth3,rectHeight3;
 
@@ -46,10 +46,10 @@ void setup() {
   QuitButtonDraw();
   shapeButtonSetup();
   shapeButtonDraw();
+   ImageButtonSetup();
+   ;
 //textsetup();
-
-
-  rect(DrawingSurfaceX1, DrawingSurfaceY1, DrawingSurfaceWidth1, DrawingSurfaceHeight1);
+faceX1, DrawingSurfaceY1, DrawingSurfaceWidth1, DrawingSurfaceHeight1);
 }// end voidsetup()
 
 
@@ -94,11 +94,8 @@ void draw()
  rect(ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9); 
   rect(rectX2, rectY2 ,rectWidth2, rectHeight2);
   rect(rectX3, rectY3,rectWidth3,rectHeight3);
-  
-  rect(ButtonX10,ButtonY10, ButtonWidth10, ButtonHeight10);
-  
-
-}//  end void draw()
+ 
+  rect(rectXPic, rectraw()
 
 
 
@@ -115,16 +112,16 @@ void mousePressed()
  
  
  if(mouseX>ButtonX1  && mouseX<ButtonX1+ButtonWidth1 && mouseY>ButtonY1 &&  mouseY>ButtonY1+ ButtonHeight1)
- { stroke (red)}
+
  
- { 
+
  
- if(mouseX>=QuitButtonX && mouseX <= QuitButtonX+QuitButtonWidth && mouseY>= QuitButtonY &&  mouseY<= QuitButtonY+QuitButtonHeight) exit();}
+ if(mouseX>=QuitButtonX && mouseX <= QuitBut { stroke (red);}ton { X+QuitButtonWidth && mouseY>= QuitButtonY &&  mouseY<= QuitButtonY+QuitButtonHeight) exit();
  
   
   
    
 } // end void mousePressed()
 
-void keyPressed() {
+void ke}yPressed() {
 } // end void keyPressed() 
