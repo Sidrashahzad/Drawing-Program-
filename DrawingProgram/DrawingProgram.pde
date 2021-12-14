@@ -41,8 +41,15 @@ void setup() {
 
   shapeButtonSetup();
   shapeButtonDraw();
+  
   ImageButtonSetup();
   ImageButtondraw();
+  
+/*   eraseButtonsetup();
+  eraseButtondraw();
+  eraseButtonmousePressed(); 
+  eraseButtonmouseDragged();
+  eraseButtonmouseReleased();*/
 rect (DrawingSurfaceX1, DrawingSurfaceY1, DrawingSurfaceWidth1, DrawingSurfaceHeight1);
 }
 

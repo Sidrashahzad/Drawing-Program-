@@ -1,5 +1,8 @@
 
 float rectX4, rectY4,rectWidth4,rectHeight4;
+float squareX, squareY, squareWidth, squareHeight;
+float circleX,circleY,CircleDiameter;
+float triangleX1,triangleY1 ,triangleX2,triangleY2,triangleX3,triangleY3;
 String shapeButton= "Shapes";
 PFont titleFont1;
 
@@ -13,6 +16,18 @@ PFont titleFont1;
  
  
   titleFont = createFont("Harrington", 45);
+ 
+squareX = displayWidth*1/40;
+squareY=displayHeight*10/16;
+squareWidth= displayWidth*1/16; 
+squareHeight=displayHeight*1/16;
+ 
+ circleX = displayWidth*5/40;
+ circleY=displayHeight*11/16;
+ CircleDiameter= displayWidth*1/20; 
+ 
+ 
+ 
  
  
  }
@@ -33,8 +48,9 @@ PFont titleFont1;
   textFont(titleFont, 40);
   text(shapeButton,rectX4, rectY4,rectWidth4,rectHeight4);
   fill(white);
-  
- 
+  rect(squareX, squareY, squareWidth, squareHeight); 
+ ellipse(circleX,circleY,CircleDiameter,CircleDiameter); 
+ triangle(triangleX1,triangleY1 ,triangleX2,triangleY2,triangleX3,triangleY3);
   }
   
   
