@@ -14,10 +14,9 @@ float ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9;
 
 float rectX2, rectY2 ,rectWidth2, rectHeight2;
 float rectX3, rectY3,rectWidth3,rectHeight3;
-
+color black=#0F0F0F;
 color white= #FFFFFF ;
 color red=#FF1717;
-color orange=#FF981A;
 color yellow=#FFF81A;
 color green=#4EFF1A;
 color skyBlue=#1ADBFF;
@@ -67,10 +66,10 @@ void draw()
   
   rect(rectX1, rectY1 ,rectWidth1, rectHeight1);
   
- fill(red);
+ fill(black);
  rect(ButtonX1, ButtonY1, ButtonWidth1, ButtonHeight1);
  fill(reset);
- fill(orange);
+ fill(red);
  rect(ButtonX2, ButtonY2, ButtonWidth2, ButtonHeight2);
  fill(reset);
  fill(yellow);
@@ -96,6 +95,9 @@ void draw()
   rect(rectX2, rectY2 ,rectWidth2, rectHeight2);
   rect(rectX3, rectY3,rectWidth3,rectHeight3);
 // ellipse
+
+
+    
 }
 
 
@@ -112,7 +114,14 @@ void mousePressed()
  }
  
  
- if(mouseX>ButtonX1  && mouseX<ButtonX1+ButtonWidth1 && mouseY>ButtonY1 &&  mouseY>ButtonY1+ButtonHeight1);
+ if(mouseX>ButtonX1  && mouseX<ButtonX1+ButtonWidth1 && mouseY>ButtonY1 &&  mouseY>ButtonY1+ButtonHeight1)
+ { stroke(black);}
+ 
+ 
+  if(mouseX>ButtonX2  && mouseX<ButtonX2+ButtonWidth2 && mouseY>ButtonY2 &&  mouseY>ButtonY2+ButtonHeight2);
+  
+  { stroke(red);}
+ 
  
   if(mouseX>=QuitButtonX && mouseX <= QuitButtonX+QuitButtonWidth && mouseY>= QuitButtonY &&  mouseY<= QuitButtonY+QuitButtonHeight) exit();
  

@@ -4,7 +4,7 @@ float  titleX, titleY, titleWidth, titleHeight;
 color QuitbuttonColour, Grey=#DEDEDE,darkgrey=#9B9B90, reset=white;
 String quitButton ="Exit";
 PFont titleFont ;
-color black=#0F0F0F;
+
 
 void QuitButtonSetup()
 
@@ -34,7 +34,6 @@ void QuitButtonDraw()
   } else {
     QuitbuttonColour = darkgrey ;
   }
-    
  fill(QuitbuttonColour);
  rect(QuitButtonX, QuitButtonY, QuitButtonWidth, QuitButtonHeight);
  fill(reset);

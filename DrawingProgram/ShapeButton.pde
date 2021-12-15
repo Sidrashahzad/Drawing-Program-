@@ -26,7 +26,12 @@ squareHeight=displayHeight*1/16;
  circleY=displayHeight*11/16;
  CircleDiameter= displayWidth*1/20; 
  
- 
+triangleX1 = displayWidth*8/40;
+triangleY1=displayHeight*10/16;
+triangleX2 = displayWidth*7/40;
+triangleY2=displayHeight*11/16;
+triangleX3 = displayWidth*9/40;
+triangleY3=displayHeight*11/16;
  
  
  
