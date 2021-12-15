@@ -58,7 +58,7 @@ rect (DrawingSurfaceX1, DrawingSurfaceY1, DrawingSurfaceWidth1, DrawingSurfaceHe
 
 void draw()
 {
-
+QuitButtonDraw ();
   if (draw == true && mouseX>DrawingSurfaceX1 && mouseX<DrawingSurfaceX1+DrawingSurfaceWidth1 &&  mouseY>DrawingSurfaceY1 && mouseY<DrawingSurfaceY1+DrawingSurfaceHeight1) 
   {
     line(mouseX,mouseY, pmouseX,pmouseY);
@@ -115,11 +115,10 @@ void mousePressed()
  
  
  if(mouseX>ButtonX1  && mouseX<ButtonX1+ButtonWidth1 && mouseY>ButtonY1 &&  mouseY>ButtonY1+ButtonHeight1)
- { stroke(black);}
+ { stroke(black);};
  
  
-  if(mouseX>ButtonX2  && mouseX<ButtonX2+ButtonWidth2 && mouseY>ButtonY2 &&  mouseY>ButtonY2+ButtonHeight2);
-  
+  if(mouseX>ButtonX2  && mouseX<ButtonX2+ButtonWidth2 && mouseY>ButtonY2 &&  mouseY>ButtonY2+ButtonHeight2)
   { stroke(red);}
  
  
