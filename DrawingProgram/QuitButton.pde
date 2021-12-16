@@ -25,8 +25,7 @@ QuitButtonX = displayWidth* 0;
 
 void QuitButtonDraw()
 {
-  
- println(mouseX, mouseY);
+ 
 
  if(mouseX >=  QuitButtonX  &&  mouseY >= QuitButtonY && mouseX <= QuitButtonX+QuitButtonWidth && mouseY <= QuitButtonY+QuitButtonHeight)
   {
