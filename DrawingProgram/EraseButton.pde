@@ -1,16 +1,18 @@
- /*
+ 
 float bx;
 float by;
-int boxSize = 75;
+int boxSize = 3;
 boolean overBox = false;
 boolean locked = false;
 float xOffset = 0.0; 
 float yOffset = 0.0; 
-
+color grey=#CBBFCB;
+color white2=#FAFAFA;
 void eraseButtonsetup() {
  
-  bx = displayWidth/2.0;
-  by = displayHeight/2.0;
+  bx = displayWidth*1/20; 
+  by = displayHeight*1/20;
+  
   rectMode(RADIUS);  
 }
 
@@ -22,12 +24,12 @@ void eraseButtondraw() {
       mouseY > by-boxSize && mouseY < by+boxSize) {
     overBox = true;  
     if(!locked) { 
-      stroke(255); 
-      fill(153);
+      stroke(5); 
+      fill(grey);
     } 
   } else {
-    stroke(153);
-    fill(153);
+    stroke(5);
+    fill(white2);
     overBox = false;
   }
   
@@ -38,7 +40,7 @@ void eraseButtondraw() {
 void eraseButtonmousePressed() {
   if(overBox) { 
     locked = true; 
-    fill(255, 255, 255);
+    fill(grey);
   } else {
     locked = false;
   }
@@ -57,4 +59,3 @@ void eraseButtonmouseDragged() {
 void eraseButtonmouseReleased() {
   locked = false;
 }
-*/

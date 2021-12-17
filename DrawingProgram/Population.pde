@@ -68,7 +68,6 @@ void Population()
  rectWidth3= displayWidth*1/4; 
  rectHeight3=displayHeight*1/5;
  
-
  
 
 

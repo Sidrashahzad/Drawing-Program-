@@ -11,7 +11,7 @@ float ButtonX6, ButtonY6, ButtonWidth6, ButtonHeight6;
 float ButtonX7, ButtonY7, ButtonWidth7, ButtonHeight7;
 float ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8;
 float ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9;
-
+float lineX,lineY,lineWidth,lineHeight;
 float rectX2, rectY2 ,rectWidth2, rectHeight2;
 float rectX3, rectY3,rectWidth3,rectHeight3;
 color black=#0F0F0F;
@@ -24,7 +24,6 @@ color blue =#1A49FF;
 color purple =#C11AFF;
 color pink=#FF08C2;
 Boolean draw=false;
-
 
 
 
@@ -44,9 +43,9 @@ void setup() {
   ImageButtonSetup();
   ImageButtondraw();
   
-/*   eraseButtonsetup();
-  eraseButtondraw();
-  eraseButtonmousePressed(); 
+/*  eraseButtonsetup();
+ eraseButtondraw();
+ eraseButtonmousePressed(); 
   eraseButtonmouseDragged();
   eraseButtonmouseReleased();*/
 rect (DrawingSurfaceX1, DrawingSurfaceY1, DrawingSurfaceWidth1, DrawingSurfaceHeight1);
@@ -93,18 +92,17 @@ QuitButtonDraw ();
   
  rect(ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9); 
   rect(rectX2, rectY2 ,rectWidth2, rectHeight2);
-  rect(rectX3, rectY3,rectWidth3,rectHeight3);
-// ellipse
+rect(rectX3, rectY3,rectWidth3,rectHeight3);
 
 
-    
+
 }
 
 
 
 
-void mousePressed() 
-{
+void mousePressed() {
+
   if(mouseX>DrawingSurfaceX1 && mouseX<DrawingSurfaceX1+DrawingSurfaceWidth1 &&  mouseY>DrawingSurfaceY1 && mouseY<DrawingSurfaceY1+DrawingSurfaceHeight1)
  {
    if(draw==false) 
@@ -113,19 +111,17 @@ void mousePressed()
    draw=false; }
  }
  
- 
- if( mouseY>ButtonY1 &&  mouseY>ButtonY1+ButtonHeight1)
- { stroke(black);};
- 
- 
-  if(mouseY>ButtonY2 &&  mouseY>ButtonY2+ButtonHeight2)
-  { stroke(red);}
- 
+ {
+ if( mouseY>ButtonY1 &&  mouseY<ButtonY1+ButtonHeight1);}
+
+
+ { if(mouseY>ButtonY2 &&  mouseY<ButtonY2+ButtonHeight2);
+ }
+
  
   if(mouseX>=QuitButtonX && mouseX <= QuitButtonX+QuitButtonWidth && mouseY>= QuitButtonY &&  mouseY<= QuitButtonY+QuitButtonHeight) exit();
  
- 
- 
+   
 }
 
  

@@ -6,7 +6,7 @@ String IMAGEButton= "IMAGES";
 void ImageButtonSetup(){
  ButtonX10= displayWidth*0;
  ButtonY10=displayHeight*6/8;
- ButtonWidth10= displayWidth*1/4; 
+ ButtonWidth10= displayWidth*2/8; 
  ButtonHeight10=displayHeight*1/9;
 }
 
