@@ -1,3 +1,6 @@
+PImage pic;
+float imageStartWidth, imageStartHeight, imageWidth, imageHeight;
+float imageWidthRatio, imageHeightRatio;
 float  ButtonX10,ButtonY10, ButtonWidth10, ButtonHeight10;
 String IMAGEButton= "IMAGES";
 //PFont titleFont2;
@@ -15,7 +18,7 @@ void ImageButtondraw(){
 
 rect(ButtonX10,ButtonY10, ButtonWidth10,ButtonHeight10);
   fill(black);
- textAlign (CENTER, TOP);
+ textAlign (CENTER, CENTER);
   textFont(titleFont, 40);
   text(IMAGEButton, ButtonX10,ButtonY10, ButtonWidth10,ButtonHeight10);
   fill(white);

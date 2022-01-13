@@ -9,7 +9,8 @@ PFont titleFont1;
 
 
  void shapeButtonSetup()
- {  rectX4= displayWidth*0;
+ { 
+   rectX4= displayWidth*0;
  rectY4= displayHeight*9/16;
  rectWidth4= displayWidth*1/4; 
  rectHeight4=displayHeight*1/5;
