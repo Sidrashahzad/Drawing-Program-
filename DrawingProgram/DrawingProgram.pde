@@ -1,3 +1,11 @@
+//liabrary
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+
 //Global Variables 
 float DrawingSurfaceX1, DrawingSurfaceY1, DrawingSurfaceWidth1, DrawingSurfaceHeight1;
 float rectX1, rectY1 ,rectWidth1, rectHeight1;
@@ -15,6 +23,8 @@ float lineX,lineY,lineWidth,lineHeight;
 float rectX2, rectY2 ,rectWidth2, rectHeight2;
 float rectX3, rectY3,rectWidth3,rectHeight3;
 float rectX5 , rectY5 ,rectWidth5 ,rectHeight5;
+float triX1,  triY1, triX2, triY2, triX3, triY3;
+
 color black=#0F0F0F;
 color white= #FFFFFF ;
 color red=#FF1717;
