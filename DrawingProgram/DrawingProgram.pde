@@ -25,6 +25,8 @@ float rectX3, rectY3,rectWidth3,rectHeight3;
 float rectX5 , rectY5 ,rectWidth5 ,rectHeight5;
 float triX1,  triY1, triX2, triY2, triX3, triY3;
 
+float lineX1,lineY1, lineWidth1,lineHeight1;
+float lineX2 ,lineY2, lineWidth2,lineHeight2;
 color black=#0F0F0F;
 color white= #FFFFFF ;
 color red=#FF1717;
@@ -109,6 +111,8 @@ QuitButtonDraw ();
 rect(rectX3, rectY3,rectWidth3,rectHeight3);
 rect(rectX5 , rectY5 ,rectWidth5 ,rectHeight5);
 
+
+//line(lineX3);
 }
 
 

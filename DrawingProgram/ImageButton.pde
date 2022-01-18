@@ -13,7 +13,7 @@ void ImageButtonSetup(){
  ButtonWidth10= displayWidth*2/8; 
  ButtonHeight10=displayHeight*1/9;
  
-  resize( 0, DrawingSurfaceWidth1, DrawingSurfaceHeight1);
+//  resize( 0, DrawingSurfaceWidth1, DrawingSurfaceHeight1);
   img = loadImage("hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg");  // Load the image into the program
  
 }
