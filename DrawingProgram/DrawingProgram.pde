@@ -18,7 +18,7 @@ float ButtonX5, ButtonY5, ButtonWidth5, ButtonHeight5;
 float ButtonX6, ButtonY6, ButtonWidth6, ButtonHeight6;
 float ButtonX7, ButtonY7, ButtonWidth7, ButtonHeight7;
 float ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8;
-float ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9;
+
 float lineX,lineY,lineWidth,lineHeight;
 float rectX2, rectY2 ,rectWidth2, rectHeight2;
 float rectX3, rectY3,rectWidth3,rectHeight3;
@@ -54,7 +54,9 @@ void setup() {
  
   
   ImageButtonSetup();
-  ImageButtondraw();
+  
+  
+  resetButtonSetup();
   
 /*  eraseButtonsetup();
  eraseButtondraw();
@@ -72,7 +74,7 @@ void draw() {
 shapeButtonDraw();
  ImageButtondraw();
 QuitButtonDraw ();
-
+resetButtondraw();
 
   if (draw == true && mouseX>DrawingSurfaceX1 && mouseX<DrawingSurfaceX1+DrawingSurfaceWidth1 &&  mouseY>DrawingSurfaceY1 && mouseY<DrawingSurfaceY1+DrawingSurfaceHeight1) 
   {
@@ -106,10 +108,11 @@ QuitButtonDraw ();
  rect(ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8);
   fill(reset);
   
- rect(ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9); 
+ 
   rect(rectX2, rectY2 ,rectWidth2, rectHeight2);
 rect(rectX3, rectY3,rectWidth3,rectHeight3);
 rect(rectX5 , rectY5 ,rectWidth5 ,rectHeight5);
+
 
 
 //line(lineX3);
@@ -120,6 +123,7 @@ rect(rectX5 , rectY5 ,rectWidth5 ,rectHeight5);
 
 void mousePressed() {
 
+  resetButtonMousePressed();
   if(mouseX>DrawingSurfaceX1 && mouseX<DrawingSurfaceX1+DrawingSurfaceWidth1 &&  mouseY>DrawingSurfaceY1 && mouseY<DrawingSurfaceY1+DrawingSurfaceHeight1)
  {
    if(draw==false) 
@@ -168,6 +172,13 @@ void mousePressed() {
   }
  
  
+ if(mouseX > rectX5  &&  mouseY> rectY5  &&  mouseX<rectX5 + rectWidth5   && mouseY < rectY5+rectHeight5 ){
+   strokeWeight(4);
+   stroke(reset);
+   fill(reset);
+  }
+ 
+ 
   if(mouseX>=QuitButtonX && mouseX <= QuitButtonX+QuitButtonWidth && mouseY>= QuitButtonY &&  mouseY<= QuitButtonY+QuitButtonHeight) exit();
  
    
@@ -184,4 +195,5 @@ void mousePressed() {
 
 
 void keyPressed() {
+  resetButtonkeyPressed();
 } // end void keyPressed() 
