@@ -71,5 +71,22 @@ void Population()
  rectHeight5=displayHeight*2/16;
 
 
+stopX = displayWidth*1/2;
+stopY= displayHeight* 14.5/16;
+stopWidth =  displayWidth*1/24; 
+stopHeight = displayHeight*1/14;
+
+// play
+ playX1 = displayWidth* 4.9/12;
+ playY1= displayHeight* 14.49/16;
+ playWidth1  =  displayWidth*1/19.5; 
+ playHeight1 = displayHeight*1/13;
+ 
+triX4  = displayWidth* 5/12;
+triY4 = displayHeight* 14.5/16;
+triX5 = displayWidth* 5/12;
+triY5 =  displayHeight* 15.65/16; 
+triX6= displayWidth* 5.5/12;
+triY6 = displayHeight* 14.9/16;
 
 } // end void Population()

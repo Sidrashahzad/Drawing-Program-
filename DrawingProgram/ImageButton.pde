@@ -16,7 +16,7 @@ void ImageButtonSetup(){
  
   
   img = loadImage("hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg");  // Load the image into the program
- 
+img.resize( displayWidth*3/4, displayHeight*7/8);
 }
 
 void ImageButtondraw(){
@@ -28,7 +28,7 @@ rect(ButtonX10,ButtonY10, ButtonWidth10,ButtonHeight10);
   textFont(titleFont, 40);
   text(IMAGEButton, ButtonX10,ButtonY10, ButtonWidth10,ButtonHeight10);
   fill(white);
-  if(image1 == true)image(img, DrawingSurfaceX1,0);
+if(image1 == true)  image(img, DrawingSurfaceX1,0);
   
   // Displays the image at point (0, height/2) at half of its size
  
@@ -38,6 +38,7 @@ void  ImageButtonMousePressed(){
   {
     image1 = false;
 if(mouseX >= ButtonX10  &&  mouseY >=  ButtonY10 && mouseX <= ButtonX10+ButtonWidth10 && mouseY <= ButtonY10+ButtonHeight10)image1 = true;}
+
 }
 
 
