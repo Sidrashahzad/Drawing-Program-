@@ -22,7 +22,8 @@ void resetButtonSetup(){
 void resetButtondraw(){
 
  if (drawingRect==true)rect (DrawingSurfaceX2, DrawingSurfaceY2, DrawingSurfaceWidth2, DrawingSurfaceHeight2);
-rect( ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9);
+ strokeWeight(4);
+ rect( ButtonX9, ButtonY9, ButtonWidth9, ButtonHeight9);
   fill(black);
  textAlign (CENTER, CENTER);
   textFont(titleFont,  40);

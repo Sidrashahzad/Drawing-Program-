@@ -48,6 +48,7 @@ triangleY3=displayHeight*11/16;
   void shapeButtonDraw()
   
   {
+     strokeWeight(4);
     rect(rectX4, rectY4,rectWidth4,rectHeight4);
     fill(black);
  textAlign (CENTER, TOP);
