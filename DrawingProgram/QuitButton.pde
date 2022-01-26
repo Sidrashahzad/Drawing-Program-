@@ -33,6 +33,7 @@ void QuitButtonDraw()
   } else {
     QuitbuttonColour = darkgrey ;
   }
+  strokeWeight(4);
  fill(QuitbuttonColour);
  rect(QuitButtonX, QuitButtonY, QuitButtonWidth, QuitButtonHeight);
  fill(reset);

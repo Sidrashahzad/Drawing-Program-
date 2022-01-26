@@ -21,9 +21,13 @@ float ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8;
 
 float rectX2, rectY2 ,rectWidth2, rectHeight2;
 float rectX3, rectY3,rectWidth3,rectHeight3;
+float rectX4, rectY4,rectWidth4,rectHeight4;
 float rectX5 , rectY5 ,rectWidth5 ,rectHeight5;
 float triX1,  triY1, triX2, triY2, triX3, triY3;
 
+float linX1,lineY1,lineWidth1,lineHeight;
+float linX2,lineY2,lineWidth2,lineHeight2;
+float linX3,lineY3,lineWidth3,lineHeight3;
 float stopX,stopY,stopWidth,stopHeight;
 float  triX4,  triY4, triX5, triY5, triX6, triY6;
 float  playX1,playY1,playWidth1, playHeight1;
@@ -37,7 +41,7 @@ color blue =#1A49FF;
 color purple =#C11AFF;
 color pink=#FF08C2;
 Boolean draw=false;
-
+float masterStroke= 1;
 Minim minim; //creates object to access all functions
 AudioPlayer song1; //creates "Play List" variable holding extensions WAV, AIFF, AU, SND, and MP3
 
@@ -54,7 +58,7 @@ void setup() {
   QuitButtonSetup ();
   QuitButtonDraw ();
 
-  shapeButtonSetup();
+
  
   
   ImageButtonSetup();
@@ -62,11 +66,7 @@ void setup() {
   
   resetButtonSetup();
   
-/*  eraseButtonsetup();
- eraseButtondraw();
- eraseButtonmousePressed(); 
-  eraseButtonmouseDragged();
-  eraseButtonmouseReleased();*/
+
 rect (DrawingSurfaceX1, DrawingSurfaceY1, DrawingSurfaceWidth1, DrawingSurfaceHeight1);
 }
 
@@ -75,7 +75,7 @@ rect (DrawingSurfaceX1, DrawingSurfaceY1, DrawingSurfaceWidth1, DrawingSurfaceHe
 
 
 void draw() {
-shapeButtonDraw();
+
  ImageButtondraw();
 QuitButtonDraw ();
 resetButtondraw();
@@ -83,6 +83,7 @@ resetButtondraw();
   if (draw == true && mouseX>DrawingSurfaceX1 && mouseX<DrawingSurfaceX1+DrawingSurfaceWidth1 &&  mouseY>DrawingSurfaceY1 && mouseY<DrawingSurfaceY1+DrawingSurfaceHeight1) 
   {
     line(mouseX,mouseY, pmouseX,pmouseY);
+   
   }
   strokeWeight(4);
   rect(rectX1, rectY1 ,rectWidth1, rectHeight1);
@@ -120,6 +121,7 @@ rect(rectX5 , rectY5 ,rectWidth5 ,rectHeight5);
 
  strokeWeight(4);
 //play-pause
+rect( rectX4, rectY4,rectWidth4,rectHeight4);
 fill(black);
 rect(playX1,playY1,playWidth1, playHeight1);
 fill(reset);
@@ -131,11 +133,13 @@ triangle(triX4,  triY4, triX5, triY5, triX6, triY6);
 rect( stopX,stopY,stopWidth,stopHeight);
 // line
 strokeWeight(4);
-line(30,330,250,330);
+line(linX1,lineY1,lineWidth1,lineHeight);
 strokeWeight(10);
-line(30,360,250,360);
+line(linX2,lineY2,lineWidth2,lineHeight2);
+
 strokeWeight(20);
-line(30,390,250,390);
+line(linX3,lineY3,lineWidth3,lineHeight3);
+
 
 
 }
@@ -210,14 +214,11 @@ void mousePressed() {
    stroke(reset);
    fill(reset);
   }
- 
- if(mouseX > 30  &&  mouseY> 330  &&  mouseX<30 + 250   && mouseY < 330+330){
-strokeWeight(4);}
 
-
-if(mouseX > 30  &&  mouseY> 360  &&  mouseX<30 + 250   && mouseY < 360+360){ 
-strokeWeight(10);}
-
+/* if(mouseX > 30  &&  mouseY> 330  &&  mouseX<30 + 250   && mouseY < 330+330){
+*/
+if(mouseX >  linX3 &&  mouseY>lineY3 &&  mouseX< linX3+lineWidth3 && mouseY < lineY3+lineHeight3){
+  strokeWeight(40);}
   if(mouseX>=QuitButtonX && mouseX <= QuitButtonX+QuitButtonWidth && mouseY>= QuitButtonY &&  mouseY<= QuitButtonY+QuitButtonHeight) exit();
  
  if (mouseX>=playX1 && mouseX <= playX1+playWidth1 && mouseY>= playY1 &&  mouseY<= playY1+playHeight1) {
@@ -239,18 +240,12 @@ strokeWeight(10);}
     } else { //Song is not playing
       song1.rewind();
     }
+
+
 }
-}
-//
 
 
 
  
   
-  
- 
-
-
-void keyPressed() {
-  resetButtonkeyPressed();
-} // end void keyPressed() 
+   

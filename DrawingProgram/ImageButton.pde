@@ -21,7 +21,7 @@ img.resize( displayWidth*3/4, displayHeight*7/8);
 
 void ImageButtondraw(){
 
-
+strokeWeight(4);
 rect(ButtonX10,ButtonY10, ButtonWidth10,ButtonHeight10);
   fill(black);
  textAlign (CENTER, CENTER);
@@ -40,7 +40,3 @@ void  ImageButtonMousePressed(){
 if(mouseX >= ButtonX10  &&  mouseY >=  ButtonY10 && mouseX <= ButtonX10+ButtonWidth10 && mouseY <= ButtonY10+ButtonHeight10)image1 = true;}
 
 }
-
-
-
-void ImageButtonkeyPressed(){}
