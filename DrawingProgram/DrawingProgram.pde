@@ -19,7 +19,6 @@ float ButtonX6, ButtonY6, ButtonWidth6, ButtonHeight6;
 float ButtonX7, ButtonY7, ButtonWidth7, ButtonHeight7;
 float ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8;
 
-float lineX,lineY,lineWidth,lineHeight;
 float rectX2, rectY2 ,rectWidth2, rectHeight2;
 float rectX3, rectY3,rectWidth3,rectHeight3;
 float rectX5 , rectY5 ,rectWidth5 ,rectHeight5;
@@ -28,8 +27,6 @@ float triX1,  triY1, triX2, triY2, triX3, triY3;
 float stopX,stopY,stopWidth,stopHeight;
 float  triX4,  triY4, triX5, triY5, triX6, triY6;
 float  playX1,playY1,playWidth1, playHeight1;
-float lineX1,lineY1, lineWidth1,lineHeight1;
-float lineX2 ,lineY2, lineWidth2,lineHeight2;
 color black=#0F0F0F;
 color white= #FFFFFF ;
 color red=#FF1717;
@@ -87,7 +84,7 @@ resetButtondraw();
   {
     line(mouseX,mouseY, pmouseX,pmouseY);
   }
-  
+  strokeWeight(4);
   rect(rectX1, rectY1 ,rectWidth1, rectHeight1);
   
  fill(black);
@@ -115,22 +112,32 @@ resetButtondraw();
  rect(ButtonX8, ButtonY8, ButtonWidth8, ButtonHeight8);
   fill(reset);
   
- 
+  
+  strokeWeight(4);
   rect(rectX2, rectY2 ,rectWidth2, rectHeight2);
 rect(rectX3, rectY3,rectWidth3,rectHeight3);
 rect(rectX5 , rectY5 ,rectWidth5 ,rectHeight5);
 
+ strokeWeight(4);
 //play-pause
 fill(black);
 rect(playX1,playY1,playWidth1, playHeight1);
 fill(reset);
+ strokeWeight(4);
 triangle(triX4,  triY4, triX5, triY5, triX6, triY6);
 
 // stop
 
 rect( stopX,stopY,stopWidth,stopHeight);
 // line
-line(5,50,95,50);
+strokeWeight(4);
+line(30,330,250,330);
+strokeWeight(10);
+line(30,360,250,360);
+strokeWeight(20);
+line(30,390,250,390);
+
+
 }
 
 
@@ -204,9 +211,13 @@ void mousePressed() {
    fill(reset);
   }
  
- 
- 
- 
+ if(mouseX > 30  &&  mouseY> 330  &&  mouseX<30 + 250   && mouseY < 330+330){
+strokeWeight(4);}
+
+
+if(mouseX > 30  &&  mouseY> 360  &&  mouseX<30 + 250   && mouseY < 360+360){ 
+strokeWeight(10);}
+
   if(mouseX>=QuitButtonX && mouseX <= QuitButtonX+QuitButtonWidth && mouseY>= QuitButtonY &&  mouseY<= QuitButtonY+QuitButtonHeight) exit();
  
  if (mouseX>=playX1 && mouseX <= playX1+playWidth1 && mouseY>= playY1 &&  mouseY<= playY1+playHeight1) {
