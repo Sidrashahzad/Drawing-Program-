@@ -16,7 +16,7 @@ void ImageButtonSetup(){
  
   
   img = loadImage("hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg");  // Load the image into the program
-img.resize( displayWidth*3/4, displayHeight*7/8);
+img.resize( displayWidth*3/4, displayHeight*1);
 }
 
 void ImageButtondraw(){

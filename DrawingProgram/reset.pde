@@ -15,7 +15,7 @@ void resetButtonSetup(){
  DrawingSurfaceX2 = displayWidth*1/4; 
  DrawingSurfaceY2 =  displayHeight*0;
  DrawingSurfaceWidth2 = displayWidth*3/4;
- DrawingSurfaceHeight2 = displayHeight*7/8;
+ DrawingSurfaceHeight2 = displayHeight*1;
 
 }
 

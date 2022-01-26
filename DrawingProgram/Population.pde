@@ -5,7 +5,7 @@ void Population()
  DrawingSurfaceX1 = displayWidth*1/4;
  DrawingSurfaceY1 =  displayHeight*0;
  DrawingSurfaceWidth1 = displayWidth*3/4;
- DrawingSurfaceHeight1= displayHeight*7/8;
+ DrawingSurfaceHeight1= displayHeight*1;
  
  rectX1 = displayWidth*0;
  rectY1 =  displayHeight*0;

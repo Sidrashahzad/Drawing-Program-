@@ -83,11 +83,14 @@ resetButtondraw();
   if (draw == true && mouseX>DrawingSurfaceX1 && mouseX<DrawingSurfaceX1+DrawingSurfaceWidth1 &&  mouseY>DrawingSurfaceY1 && mouseY<DrawingSurfaceY1+DrawingSurfaceHeight1) 
   {
     line(mouseX,mouseY, pmouseX,pmouseY);
+   if(mouseX>linX3 &&  mouseY>lineY3 &&  mouseX<linX3+lineWidth3 && mouseY < lineY3+lineHeight3){
+ 
+  strokeWeight(20);
    
+}
   }
   strokeWeight(4);
   rect(rectX1, rectY1 ,rectWidth1, rectHeight1);
-  
  fill(black);
  rect(ButtonX1, ButtonY1, ButtonWidth1, ButtonHeight1);
  fill(reset);
@@ -157,16 +160,17 @@ void mousePressed() {
    { draw=true;
    } else{
    draw=false; }
+   
  }
  
  
  if(mouseX> ButtonX1  &&  mouseY> ButtonY1 && mouseX< ButtonX1+ButtonWidth1 && mouseY < ButtonY1+ButtonHeight1){
-   strokeWeight(4);
+   
    stroke(black);
     fill(reset);
+
+
  }
-
-
   if(mouseX > ButtonX2 && mouseY> ButtonY2  && mouseX< ButtonX2+ButtonWidth2  && mouseY < ButtonY2+ButtonHeight2){
     strokeWeight(4);
     stroke(red);
@@ -209,7 +213,7 @@ void mousePressed() {
   }
  
  
- if(mouseX > rectX5  &&  mouseY> rectY5  &&  mouseX<rectX5 + rectWidth5   && mouseY < rectY5+rectHeight5 ){
+ if(mouseX >= rectX5  &&  mouseY>= rectY5  &&  mouseX<=rectX5 + rectWidth5   && mouseY <= rectY5+rectHeight5 ){
     strokeWeight(4);
    stroke(reset);
    fill(reset);
@@ -217,8 +221,11 @@ void mousePressed() {
 
 /* if(mouseX > 30  &&  mouseY> 330  &&  mouseX<30 + 250   && mouseY < 330+330){
 */
-if(mouseX >  linX3 &&  mouseY>lineY3 &&  mouseX< linX3+lineWidth3 && mouseY < lineY3+lineHeight3){
-  strokeWeight(40);}
+if(mouseX>linX3 &&  mouseY>lineY3 &&  mouseX<linX3+lineWidth3 && mouseY < lineY3+lineHeight3){
+ 
+  strokeWeight(20);
+   
+}
   if(mouseX>=QuitButtonX && mouseX <= QuitButtonX+QuitButtonWidth && mouseY>= QuitButtonY &&  mouseY<= QuitButtonY+QuitButtonHeight) exit();
  
  if (mouseX>=playX1 && mouseX <= playX1+playWidth1 && mouseY>= playY1 &&  mouseY<= playY1+playHeight1) {
@@ -244,7 +251,7 @@ if(mouseX >  linX3 &&  mouseY>lineY3 &&  mouseX< linX3+lineWidth3 && mouseY < li
 
 }
 
-
+}
 
  
   
