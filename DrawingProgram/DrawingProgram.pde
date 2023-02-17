@@ -1,4 +1,3 @@
-//liabrary
 import ddf.minim.*;
 import ddf.minim.analysis.*;
 import ddf.minim.effects.*;
@@ -57,9 +56,6 @@ void setup() {
   Population(); 
   QuitButtonSetup ();
   QuitButtonDraw ();
-
-
- 
   
   ImageButtonSetup();
   
@@ -217,11 +213,9 @@ void mousePressed() {
     strokeWeight(4);
    stroke(reset);
    fill(reset);
-  }
+ }
 
-/* if(mouseX > 30  &&  mouseY> 330  &&  mouseX<30 + 250   && mouseY < 330+330){
-*/
-if(mouseX>linX3 &&  mouseY>lineY3 &&  mouseX<linX3+lineWidth3 && mouseY < lineY3+lineHeight3){
+if(mouseX >= linX3 &&  mouseY >= lineY3 &&  mouseX>=linX3+lineWidth3 && mouseY >= lineY3+lineHeight3){
  
   strokeWeight(20);
    

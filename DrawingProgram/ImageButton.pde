@@ -9,12 +9,11 @@ Boolean image1 = false;
 
 
 void ImageButtonSetup(){
- ButtonX10= displayWidth*0;
- ButtonY10=displayHeight*6/8;
- ButtonWidth10= displayWidth*2/8; 
- ButtonHeight10=displayHeight*1/9;
- 
-  
+ ButtonX10 = displayWidth*0;
+ ButtonY10 =displayHeight*6/8;
+ ButtonWidth10 = displayWidth*2/8; 
+ ButtonHeight10 =displayHeight*1/9;
+
   img = loadImage("hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg");  // Load the image into the program
 img.resize( displayWidth*3/4, displayHeight*1);
 }
